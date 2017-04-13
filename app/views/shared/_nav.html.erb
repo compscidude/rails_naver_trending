@@ -10,17 +10,19 @@
 <div class="row">
 
 
+    <button class="col-sm-1 btn btn-default"> <%= link_to 'Home', root_path %> </button>
+
     <% if logged_in? %>
 
-            <div class="col-sm-12"> 
-                <div class="btn btn-default"> <%= link_to 'Home', root_path %> </div>
+            <div class="col-sm-10"> 
                 <span class="text-right"> &nbsp; Hello, <strong> <%= current_user.name %> </strong> | </spa>
                 <%= link_to 'Logout', logout_path %>
             </div>
 
     <% else %>
 
-            <div class="col-sm-4">
+
+            <div class="col-sm-3 col-sm-offset-7">
                 <%= form_for(:session, url: sessions_path) do |f| %>
                         <div class="input-group">
                             <%= f.text_field :name, class: 'form-control' %>
@@ -32,8 +34,8 @@
              </div>
 
 
-                <div class="col-sm-2 border">
-                    <button class="btn btn-large"> <%= link_to 'Sign up', new_user_path %> </button>
+                <div class="col-sm-1 border">
+                    <button class="btn btn-default"> <%= link_to 'Sign up', new_user_path %> </button>
                 </div>
                 
 
