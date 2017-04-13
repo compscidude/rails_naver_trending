@@ -1,0 +1,26 @@
+
+<% provide(:title, "Register") %>
+<!-- errors are directly associated with the form_for @variable here -->
+
+
+<div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <%= form_for @user do |f| %>
+                <h3 class="text-center"> Register </h3>
+                <% if @user.errors.any? %>
+                        <div class="alert alert-warning">
+                            <% @user.errors.full_messages.each do |message| %>
+                                <li><%= message %></li>
+                            <% end %>
+                        </div>
+                <% end %>
+
+                <div>
+                    <%= f.label :name %>
+                    <%= f.text_field :name, class: 'form-control' %>
+                    <%= f.submit "Create", class: 'btn btn-default' %>
+                </div>
+            <% end %>
+        </div>
+</div>
+

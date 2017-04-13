@@ -1,0 +1,14 @@
+
+
+<hr>
+
+<ul class="list-group col-sm-6 col-sm-offset-3">
+  <% @topics.each_with_index do |topic, index| %>
+    <li class="list-group-item">
+          <span class="badge"><%= pluralize(topic.comments.count, "comment") %> </span>
+      <div> 
+        <strong> <%= index + 1 %> </strong> &nbsp; <%= link_to topic.name, topic %> 
+      </div>
+    </li>
+  <% end %>
+</ul> 

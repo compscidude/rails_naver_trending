@@ -1,0 +1,8 @@
+<div class="row">
+    <%= form_tag comments_path do %>
+        <h2>  Leave a comment </h2>
+        <%= text_area_tag :content, params[:content], class: 'form-control' %>
+        <%= hidden_field_tag :topic_id, @topic.id %> <br>
+        <%= submit_tag "Submit", class: "btn btn-default" %>
+    <% end %>
+</div>

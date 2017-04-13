@@ -1,0 +1,8 @@
+
+
+<hr>
+
+<div class="row">
+    <span> <h2> <%= @user.name %> wrote <%= @user.comments.count %> comments </h2> </span>
+     <%= render partial: 'shared/comment', collection: @user.comments %>
+</div>

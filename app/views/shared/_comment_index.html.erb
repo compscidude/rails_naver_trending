@@ -1,0 +1,5 @@
+      <li class="list-group-item">
+                <span> <%= link_to comment.user.name, comment.user %> </span>
+                <span> <small> <%= distance_of_time_in_words(Time.now, comment.created_at) %> ago </small> </span>
+                <div class="well"> <%= comment.content %> </div> 
+     </li> 
