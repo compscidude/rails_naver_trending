@@ -7,4 +7,4 @@ The current repository is hosted on Heroku
 
 https://rails-naver-trending.herokuapp.com
 
-![Screenshot](http://imgur.com/a/MjH6O.png?raw=true)
+![Screenshot](http://imgur.com/7a1iZKl.png?raw=true)
