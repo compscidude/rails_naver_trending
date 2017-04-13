@@ -1,5 +1,5 @@
 
-Naver's Trending ::  Built with Rails and Nokigiri Web Scraper
+Naver's Trending ::  Built with Rails and Nokogiri Web Scraper
 ==============================================================
 
 
